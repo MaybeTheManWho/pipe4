@@ -1,0 +1,36 @@
+/* Toggle Switch Styles */
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #0070f3;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label:before {
+    transform: translateX(1rem);
+  }
+  
+  .toggle-label {
+    width: 2.5rem;
+    height: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .toggle-label:before {
+    content: '';
+    position: absolute;
+    top: 0.125rem;
+    left: 0.125rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    transition: 0.2s;
+    background: white;
+  }
+  
+  :root.dark .toggle-checkbox:checked + .toggle-label {
+    background-color: #3b82f6;
+  }
+  
+  :root.dark .toggle-label:before {
+    background: #f3f4f6;
+  }
